@@ -1,0 +1,29 @@
+<!-- views/travelagency.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Travel Agency Form</title>
+</head>
+<body>
+    <include src="layout/header.html"></include>
+
+    <div class="container">
+        <h1>Plan Your Tour</h1>
+        <form action="/travelagency" method="post" id="travelForm">
+            <!-- Add your travel agency form elements here -->
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+
+            <!-- Add more form fields as needed -->
+
+            <button type="submit" id="showTourButton">Show Tour</button>
+        </form>
+    </div>
+
+    <include src="layout/footer.html"></include>
+    <script src="/js/main.js"></script>
+</body>
+</html>
